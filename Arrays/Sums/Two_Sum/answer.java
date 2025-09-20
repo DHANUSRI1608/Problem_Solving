@@ -12,21 +12,19 @@ public class answer{
         }
         int target=sc.nextInt();
         Arrays.sort(arr);
-        int sum=0;
-        for(int i=0;i<arr.length;i++)
-        {
-        int start=i+1,end=arr.length-1;
+        int start=0,end=arr.length-1,sum=0;
         while(start<end)
         {
-           sum=arr[start]+arr[end]+arr[i];
+           sum=arr[start]+arr[end];
            if(sum==target)
            {
-            System.out.println(arr[i]+" "+arr[start]+" "+arr[end]);
+            System.out.println(arr[start]+" "+arr[end]);
+            start++;
+            end--;
            }
            if(sum<target) start++;
            else end--; 
         }
-    }
     }
 }
 
