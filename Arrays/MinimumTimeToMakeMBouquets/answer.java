@@ -4,16 +4,16 @@ import java.util.*;
 
 class Solution {
     public static boolean canMake(int[] bloomDay, int m, int k, int days) {
-        int flowers = 0, bouquets = 0;
+        int flowersc = 0, bouquets = 0;
         for (int bloom : bloomDay) {
             if (bloom <= days) {
-                flowers++;
-                if (flowers == k) {
+                flowersc++;
+                if (flowersc == k) {
                     bouquets++;
-                    flowers = 0;
+                    flowersc = 0;
                 }
             } else {
-                flowers = 0; 
+                flowersc = 0; 
             }
         }
         return bouquets >= m;
