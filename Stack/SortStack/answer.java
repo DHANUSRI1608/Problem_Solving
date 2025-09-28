@@ -2,13 +2,13 @@ package Stack.SortStack;
 import java.util.*;
 
 public class answer {
-    public static void rec(Stack<Integer> stc, int x) {
+    public static void recursion(Stack<Integer> stc, int x) {
         if (stc.isEmpty() || stc.peek() <= x) {
             stc.push(x);
             return;
         }
         int top = stc.pop();
-        rec(stc, x);
+        recursion(stc, x);
         stc.push(top);
     }
 
@@ -16,7 +16,7 @@ public class answer {
         if (stc.isEmpty()) return;
         int top = stc.pop();
         sort(stc);
-        rec(stc, top);
+        recursion(stc, top);
     }
 
     public static void main(String[] args) {
