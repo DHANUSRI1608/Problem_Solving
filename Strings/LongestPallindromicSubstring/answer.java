@@ -1,7 +1,5 @@
 package Strings.LongestPallindromicSubstring;
 
-import java.util.*;
-
 public class answer{
     public static boolean ispallindrome(String s, int left, int right) {
         while (left <= right) {

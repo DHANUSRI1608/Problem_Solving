@@ -1,5 +1,3 @@
-package Arrays.LongestCommonPrefix;
-
 public class answer {
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) return "";
