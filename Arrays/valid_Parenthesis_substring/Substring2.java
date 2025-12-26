@@ -21,11 +21,6 @@ public class Substring2 {
         
         return leftMin == 0;
     }
-
-    @Override
-    public String toString() {
-        return "Solution []";
-    }
 }
 
 /*class Solution {
