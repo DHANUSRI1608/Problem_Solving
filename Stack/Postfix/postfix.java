@@ -1,4 +1,4 @@
-package Arrays.Postfix;
+package Stack.Postfix;
 
 import java.util.*;
 
@@ -31,6 +31,6 @@ class Solution {
                 stack.push(Integer.parseInt(token));
             }
         }
-     
+       return stack.pop();
     }
 }
