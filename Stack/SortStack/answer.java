@@ -1,4 +1,3 @@
-package Stack.SortStack;
 import java.util.*;
 
 public class answer {
