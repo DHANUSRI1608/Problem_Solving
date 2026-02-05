@@ -1,3 +1,5 @@
+package Strings.RemoveStars;
+
 class Solution {
     public String removeStars(String s) {
       StringBuilder sb = new StringBuilder();
