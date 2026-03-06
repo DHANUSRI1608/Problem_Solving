@@ -28,7 +28,6 @@ class MyQueue {
         return in.isEmpty() && out.isEmpty();
     }
 
-    // Move elements only when needed
     private void shift() {
         if (out.isEmpty()) {
             while (!in.isEmpty()) {
